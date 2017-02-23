@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <link href="bootstrap.min.css" rel="=stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
 
     <title>Restaurant Petrograd</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
-    .container {
+    .container2 {
             position: relative;
         }
 
@@ -103,15 +103,16 @@
         }
 
         .bolle {
-            width: 65%;
             position: relative;
         }
 
-        .opskrift1 {
+        .produktliste {
             text-align: center;
             font-size: 25px;
             font-family: inherit;
             font-style: italic;
+            max-width: 500px;
+            margin: auto;
         }
 
         .infosuppe {
@@ -196,11 +197,16 @@
             font-style: italic;
         }
 
-        img {
+        .produktliste img {
             width: 100%;
             height: auto;
             opacity: 0.7;
             float: left;
+        }
+
+        .rabat,
+        .udsolgt {
+            text-decoration: line-through !important;
         }
 
         img {
@@ -233,21 +239,21 @@
 
 
 
-    <div class="container">
+    <div class="container2">
         <img src="4-1024x683.jpg" alt="Russian" width="200" height="100">
 
     </div>
 
 
 
-    <div class="container">
+    <div class="container2">
         <img src="imgs/medium/pavlova-md.jpg" alt="pavlova" width="100" height="100">
     </div>
 
-    <div class="container">
+    <div class="container2">
         <img src="imgs/medium/groggiroshorn-md.jpg" alt="horn" width="100" height="100">
 
-        <div class="container">
+        <div class="container2">
             <img src="imgs/medium/caviarbruschetta-md.jpg" alt="bruschetta" width="100" height="100">
             <div class="center"><strong>RESTAURANT PETROGRAD</strong>
 
@@ -256,13 +262,13 @@
 
             </div>
             <br>
-            <div class="container">
+            <div class="container2">
 
                 <div class="menu">Forretter
                 </div>
 
             </div>
-            <div class="container">
+            <div class="container2">
 
                 <div class="menu1">Hovedretter
                 </div>
@@ -286,31 +292,31 @@
     </div>
     <br>
     <br>
-    <div class="opskrift1">Murmanske bondeboller
-    </div>
-    <br>
-    <div class="infosuppe">
-        <span>
-           Murmanske bondeboller bagt i stenovn
-       </span>
-        <br>
-        <br>
-        <strong>19 kr.</strong>
-        <br>
-        <br> Se detajler
-        <br>
 
-    </div>
 
-    <br>
 
-    <div class="bolle">
-        <img src="imgs/medium/bondeboller-md.jpg" alt="boller" width="50" height="50">
 
-        <br>
-        <br>
+    <div class="produktliste">
+        <template id="produkt_template">
+
+            <div class="infosuppe">
+
+                <h4 class="data_navn">DATA_NAVN</h4>
+                <img class="img-responsive data_billede" src="imgs/medium/bondeboller-md.jpg" alt="boller" width="50" height="50">
+
+                <h4 class="pris">pris<span class="data_pris">DATA_PRIS</span>kr.</h4>
+                <h4 class="rabatpris">Rabat pris<span class="data_rabatpris">DATA_RABATPRIS</span></h4>
+                <h4 class="udsolgttekst">Denne ret er desværre udsolgt</h4>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalboller">Se detaljer</button>
+
+            </div>
+        </template>
     </div>
 
+
+
+
+    <!--
 
     <div class="opskrift2">
         <br> Pavlova i melon
@@ -321,18 +327,17 @@
         Pavlova - russiske pandekager - i honningmelon fra Nordkorea
         <br>
         <br><strong>49 kr.</strong>
-        <br>
-        <br> Se detaljer
+
     </div>
 
-
+-->
 
     <div class="pavlova">
         <img src="imgs/medium/pavlova-md.jpg" alt="pavlova2" width="50" height="50">
 
     </div>
 
-
+    <!--
     <div class="kartofler">
         Kogte kartofler
     </div>
@@ -343,10 +348,9 @@
         <br>
         <br><strong>29 kr.</strong>
         <br>
-        <br> Se detajler
-        <br>
-    </div>
 
+    </div>
+-->
 
 
 
