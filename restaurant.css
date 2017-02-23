@@ -1,0 +1,137 @@
+<style> .container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+    font-family: inherit;
+    height: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: left;
+    margin-left: px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: inherit;
+    height: 26em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.menu1 {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    font-style: italic;
+    font-family: inherit;
+    height: 28em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.menu2 {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    font-style: italic;
+    font-family: inherit;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.menu3 {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    font-style: italic;
+    font-family: inherit;
+    height: 32em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.menu4 {
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    font-style: italic;
+    font-family: inherit;
+    height: 34em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.suppe {
+    position: absolute;
+    left: 0;
+    top: 145%;
+    width: 60%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    float: left;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    float: right;
+    opacity: 0.7;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    float: left;
+    opacity: 0.7;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    float: right;
+    opacity: 0.7;
+}
+
+
+}
+</style>
