@@ -33,6 +33,9 @@ function visProdukt(produkt) {
 
     klon.querySelector(".data_billede").src = "imgs/medium/" + produkt.billede + "-md.jpg";
 
+    klon.querySelector('button').dataset.id = produkt.id;
+    klon.querySelector('button').addEventListener('click', knapKlikketPå)
+
     if (produkt.udsolgt == false) {
 
         var udsolgttekst = klon.querySelector(".udsolgttekst");
@@ -55,3 +58,7 @@ function visProdukt(produkt) {
 
 }
 //document.querySelector("." + produkt.kategori).appendChild(klon);
+
+function knapKlikketPå(oplysningerOmEventet) {
+    console.log(oplysningerOmEventet.target.dataset.id);
+}
