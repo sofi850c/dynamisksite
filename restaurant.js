@@ -60,5 +60,12 @@ function visProdukt(produkt) {
 //document.querySelector("." + produkt.kategori).appendChild(klon);
 
 function knapKlikketPå(oplysningerOmEventet) {
-    console.log(oplysningerOmEventet.target.dataset.id);
+
+    var produktId = oplysningerOmEventet.target.dataset.id;
+    $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id=" + produktId, visModalIndhold);
+
+}
+
+function visModalIndhold(mereInfo) {
+    console.log(mereInfo)
 }
