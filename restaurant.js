@@ -68,4 +68,8 @@ function knapKlikketPå(oplysningerOmEventet) {
 
 function visModalIndhold(mereInfo) {
     console.log(mereInfo)
+
+    document.querySelector('#myModalLabel').textContent = mereInfo.navn;
+    document.querySelector('#myModal .modal-body p').textContent = mereInfo.langbeskrivelse;
+
 }
