@@ -47,5 +47,11 @@ function visProdukt(produkt) {
         klon.querySelector(".pris").classList.add("rabat");
     }
 
-    document.querySelector(".produktliste").appendChild(klon);
+    //console.log("." + produkt.kategori)
+    document.querySelector("." + produkt.kategori).appendChild(klon);
+
+
+    //document.querySelector(".produktliste").appendChild(klon);
+
 }
+//document.querySelector("." + produkt.kategori).appendChild(klon);

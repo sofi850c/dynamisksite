@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
     .container2 {
-            position: relative;
+            /*position: relative;*/
         }
 
         .center {
@@ -26,10 +26,7 @@
             justify-content: center
         }
 
-        .menu {
-            position: absolute;
-            left: 0;
-            top: 70%;
+        .menuikkebrugt {
             width: 100%;
             text-align: left;
             margin-left: px;
@@ -42,7 +39,7 @@
             justify-content: center
         }
 
-        .menu1 {
+        .menu1ikkebrugt {
             position: absolute;
             left: 0;
             top: 70%;
@@ -57,7 +54,7 @@
             justify-content: center
         }
 
-        .menu2 {
+        .menu2ikkebrugt {
             position: absolute;
             left: 0;
             top: 70%;
@@ -72,7 +69,7 @@
             justify-content: center
         }
 
-        .menu3 {
+        .menu3ikkebrugt {
             position: absolute;
             left: 0;
             top: 70%;
@@ -87,7 +84,7 @@
             justify-content: center
         }
 
-        .menu4 {
+        .menu4ikkebrugt {
             position: absolute;
             left: 0;
             top: 70%;
@@ -263,34 +260,14 @@
 
             </div>
             <br>
-            <div class="container2">
-
-                <div class="menu">Forretter
-                </div>
-
-            </div>
-            <div class="container2">
-
-                <div class="menu1">Hovedretter
-                </div>
-
-                <div class="menu2">Desserter
-                </div>
-
-                <div class="menu3">Drikkevarer
-                </div>
-
-                <div class="menu4">Sideorders
-                </div>
 
 
 
 
 
-
-            </div>
         </div>
     </div>
+
     <br>
     <br>
 
@@ -298,6 +275,37 @@
 
 
     <div class="produktliste">
+        <div class="container2 forretter">
+
+            <h2 class="menu">Forretter
+                </h2>
+
+        </div>
+        <div class="container2 hovedretter">
+
+            <h2 class="menu1">Hovedretter
+                </h2>
+        </div>
+
+
+
+        <div class="container2 desserter">
+            <h2 class="menu2">Desserter
+                </h2>
+        </div>
+
+
+        <div class="container2 drikkevarer">
+
+            <h2 class="menu3">Drikkevarer
+                </h2></div>
+
+
+        <div class="container2 sideorders">
+            <h2 class="menu4">Sideorders
+                        </h2>
+        </div>
+
         <template id="produkt_template">
 
             <div class="infosuppe">
@@ -361,5 +369,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="restaurant.js"></script>
 </body>
+
 
 </html>
