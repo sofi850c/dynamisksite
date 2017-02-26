@@ -61,6 +61,8 @@ function visProdukt(produkt) {
 
 function knapKlikketPå(oplysningerOmEventet) {
 
+    document.querySelector('#myModalLabel').textContent = "Loader..";
+    document.querySelector('#myModal .modal-body p').textContent = "...";
     var produktId = oplysningerOmEventet.target.dataset.id;
     $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id=" + produktId, visModalIndhold);
 
@@ -71,5 +73,7 @@ function visModalIndhold(mereInfo) {
 
     document.querySelector('#myModalLabel').textContent = mereInfo.navn;
     document.querySelector('#myModal .modal-body p').textContent = mereInfo.langbeskrivelse;
+
+
 
 }
